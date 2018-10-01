@@ -5,11 +5,11 @@
   <head>
     {% include meta.html %}
     {% include styles.html %}
-    {% if site.google_analytics_ua or site.dap_agency %}
+    {% if site.google_analytics_ua %}
       {% include analytics.html %}
     {% endif %}
   </head>
-  <body class="{{ layout.class }} {{ page.class }} {% if site.site_width %}site-{{ site.site_width }}{% endif %}">
+  <body class="{{ layout.class }} {{ page.class }}">
 
     {% include skipnav.html %}
     {% include header.html %}
